@@ -40,8 +40,8 @@ export default function Header({ scrollY }: HeaderProps) {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            {['Home', 'About', 'Departments', 'Programs', 'Admissions', 'Faculty', 'Research', 'Events', 'Contact'].map((item) => (
+          <nav className="hidden lg:flex space-x-6">
+            {['Home', 'About', 'Programs', 'Faculty', 'Alumni', 'MOU', 'Contact'].map((item) => (
               <Link 
                 key={item} 
                 href={`#${item.toLowerCase()}`}
@@ -61,7 +61,7 @@ export default function Header({ scrollY }: HeaderProps) {
 
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden text-gray-700 focus:outline-none"
+            className="lg:hidden text-gray-700 focus:outline-none"
             onClick={toggleMobileMenu}
             aria-label="Toggle mobile menu"
           >
@@ -73,11 +73,11 @@ export default function Header({ scrollY }: HeaderProps) {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden transition-all duration-300 overflow-hidden ${
+      <div className={`lg:hidden transition-all duration-300 overflow-hidden ${
         mobileMenuOpen ? 'max-h-screen bg-white shadow-lg' : 'max-h-0'
       }`}>
         <div className="px-4 py-2 space-y-1">
-          {['Home', 'About', 'Departments', 'Programs', 'Admissions', 'Faculty', 'Research', 'Events', 'Contact'].map((item) => (
+          {['Home', 'About', 'Director', 'Programs', 'Admissions', 'Faculty', 'Research', 'Placements', 'Alumni', 'MOU', 'Events', 'Contact'].map((item) => (
             <Link 
               key={item} 
               href={`#${item.toLowerCase()}`}

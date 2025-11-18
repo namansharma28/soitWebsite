@@ -4,11 +4,14 @@ import { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import About from '../components/About';
+import DirectorNote from '../components/DirectorNote';
 import Programs from '../components/Programs';
 import Admissions from '../components/Admissions';
 import Faculty from '../components/Faculty';
 import Research from '../components/Research';
 import Placements from '../components/Placements';
+import Alumni from '../components/Alumni';
+import MOU from '../components/MOU';
 import NewsEvents from '../components/NewsEvents';
 import Gallery from '../components/Gallery';
 import Contact from '../components/Contact';
@@ -54,11 +57,14 @@ export default function Home() {
       <main>
         <Hero />
         <About />
+        <DirectorNote />
         <Programs />
         <Admissions />
         <Faculty />
         <Research />
         <Placements />
+        <Alumni />
+        <MOU />
         <NewsEvents />
         <Gallery />
         <Contact />
